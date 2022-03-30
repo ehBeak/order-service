@@ -1,6 +1,7 @@
 package com.project.orderservice.domain.item;
 
 import com.project.orderservice.domain.Order;
+import lombok.Getter;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.List;
 @Table(name = "ITEM")
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn
+@Getter
 public abstract class Item {
 
     @Id @GeneratedValue
