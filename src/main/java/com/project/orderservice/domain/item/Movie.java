@@ -1,4 +1,6 @@
-package com.project.orderservice.domain;
+package com.project.orderservice.domain.item;
+
+import com.project.orderservice.domain.item.Item;
 
 import javax.persistence.Entity;
 

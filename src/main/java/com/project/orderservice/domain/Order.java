@@ -1,5 +1,7 @@
 package com.project.orderservice.domain;
 
+import com.project.orderservice.domain.item.Item;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 

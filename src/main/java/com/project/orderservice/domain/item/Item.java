@@ -1,4 +1,6 @@
-package com.project.orderservice.domain;
+package com.project.orderservice.domain.item;
+
+import com.project.orderservice.domain.Order;
 
 import javax.persistence.*;
 import java.util.ArrayList;
