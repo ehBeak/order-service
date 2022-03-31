@@ -12,7 +12,7 @@ public class Address {
     private String street;
     private int zipcode;
 
-    public Address() { // 기본 생성자 필요
+    protected Address() { // 기본 생성자 필요
     }
 
     public Address(String city, String street, int zipcode) {

@@ -20,4 +20,16 @@ public class Member {
 
     @Embedded
     private Address address;
+
+    private String name;
+
+    //==생성 메서드==//
+    public static Member createMember(Address address, String name) {
+
+        Member createMember = new Member();
+        createMember.address = address;
+        createMember.name = name;
+
+        return createMember;
+    }
 }
