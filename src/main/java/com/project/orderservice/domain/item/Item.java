@@ -23,7 +23,5 @@ public abstract class Item {
 
     private String name;
     private int quantity;
-    private String author;
-    private int isbn;
 
 }
