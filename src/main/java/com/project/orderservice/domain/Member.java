@@ -23,13 +23,17 @@ public class Member {
 
     private String name;
 
+    //TODO: Member 생성자 고민
+    private Member(Address address, String name) {
+        this.address = address;
+        this.name = name;
+    }
+
+    protected Member() {
+    }
+
     //==생성 메서드==//
     public static Member createMember(Address address, String name) {
-
-        Member createMember = new Member();
-        createMember.address = address;
-        createMember.name = name;
-
-        return createMember;
+        return new Member(address, name);
     }
 }

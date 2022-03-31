@@ -1,11 +1,14 @@
 package com.project.orderservice.repository;
 
 import com.project.orderservice.domain.Member;
+import org.springframework.data.domain.Example;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
+//TODO: interface -> @ImplSpec
 @Repository
 public interface MemberRepository extends JpaRepository<Member, Long> {
 
@@ -26,4 +29,12 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
     @Override
     Optional<Member> findById(Long memberId);
 
+    /**
+     * 회원 전체 멤버 객체 반환
+     * @param members
+     * @param <S>
+     * @return <S extends Member> List<S>: 전체 멤버 객체 반환
+     */
+    @Override
+    <S extends Member> List<S> findAll(Example<S> members);
 }
