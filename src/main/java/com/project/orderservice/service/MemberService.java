@@ -6,7 +6,7 @@ import com.project.orderservice.domain.Member;
 public interface MemberService {
 
     /**
-     * 멤버 객체 저장
+     * @implSpec 멤버 객체 저장
      * @param address
      * @param memberName
      * @return Long: memberId
@@ -15,7 +15,7 @@ public interface MemberService {
     Long saveMember(Address address, String memberName);
 
     /**
-     * id로 멤버 객체 찾기
+     * @implSpec id로 멤버 객체 찾기
      * @param memberId
      * @return Member: member
      */

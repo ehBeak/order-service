@@ -8,12 +8,11 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
-//TODO: interface -> @ImplSpec
 @Repository
 public interface MemberRepository extends JpaRepository<Member, Long> {
 
     /**
-     * 회원 객체 저장
+     * @implSpec  회원 객체 저장
      * @param member
      * @param <S>
      * @return <S extends Member> : 저장한 멤버 객체 반환
@@ -22,7 +21,7 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
     <S extends Member> S save(S member);
 
     /**
-     * 회원 객체 ID로 조회
+     * @implSpec 회원 객체 ID로 조회
      * @param memberId
      * @return Optional<Member> : 해당 ID의 멤버 객체 반환
      */
@@ -30,7 +29,7 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
     Optional<Member> findById(Long memberId);
 
     /**
-     * 회원 전체 멤버 객체 반환
+     * @implSpec 회원 전체 멤버 객체 반환
      * @param members
      * @param <S>
      * @return <S extends Member> List<S>: 전체 멤버 객체 반환
