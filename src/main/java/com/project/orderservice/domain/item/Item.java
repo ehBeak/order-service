@@ -23,5 +23,14 @@ public abstract class Item {
 
     private String name;
     private int quantity;
+    private int price;
 
+    public Item() {
+    }
+
+    protected Item(String name, int price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
 }

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.project.orderservice.OrderServiceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-01T02:06:02" hostname="baeg-eunhuiui-MacBookPro.local" time="0.163">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.project.orderservice.OrderServiceApplicationTests" time="0.163"/>
+  <system-out><![CDATA[11:05:55.230 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+11:05:55.241 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+11:05:55.334 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.project.orderservice.OrderServiceApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+11:05:55.352 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.project.orderservice.OrderServiceApplicationTests], using SpringBootContextLoader
+11:05:55.358 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.project.orderservice.OrderServiceApplicationTests]: class path resource [com/project/orderservice/OrderServiceApplicationTests-context.xml] does not exist
+11:05:55.359 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.project.orderservice.OrderServiceApplicationTests]: class path resource [com/project/orderservice/OrderServiceApplicationTestsContext.groovy] does not exist
+11:05:55.359 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.project.orderservice.OrderServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:05:55.360 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.project.orderservice.OrderServiceApplicationTests]: OrderServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:05:55.429 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.project.orderservice.OrderServiceApplicationTests]
+11:05:55.507 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/baek-eunhee/eunhee/study/project/order-service/order-service/build/classes/java/main/com/project/orderservice/OrderServiceApplication.class]
+11:05:55.510 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.project.orderservice.OrderServiceApplication for test class com.project.orderservice.OrderServiceApplicationTests
+11:05:55.616 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.project.orderservice.OrderServiceApplicationTests]: using defaults.
+11:05:55.617 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11:05:55.634 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a15b789, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@57f791c6, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@51650883, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6c4f9535, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5bd1ceca, org.springframework.test.context.support.DirtiesContextTestExecutionListener@30c31dd7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@499b2a5c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@596df867, org.springframework.test.context.event.EventPublishingTestExecutionListener@c1fca1e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@241a53ef, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@344344fa, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2db2cd5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@70e659aa, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@615f972, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@285f09de]
+11:05:55.637 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@345e5a17 testClass = OrderServiceApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5ea502e0 testClass = OrderServiceApplicationTests, locations = '{}', classes = '{class com.project.orderservice.OrderServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@4ba302e0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@72ea6193, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6b44435b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3543df7d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@78fbff54, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@2fb0623e], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.5)
+
+2022-04-01 11:05:56.314  INFO 1183 --- [    Test worker] c.p.o.OrderServiceApplicationTests       : Starting OrderServiceApplicationTests using Java 11.0.14 on baeg-eunhuiui-MacBookPro.local with PID 1183 (started by beak-eunhee in /Users/baek-eunhee/eunhee/study/project/order-service/order-service)
+2022-04-01 11:05:56.316  INFO 1183 --- [    Test worker] c.p.o.OrderServiceApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2022-04-01 11:05:57.424  INFO 1183 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-01 11:05:57.497  INFO 1183 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2022-04-01 11:05:58.597  INFO 1183 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-01 11:05:58.649  INFO 1183 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-01 11:05:58.793  INFO 1183 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-01 11:05:58.903  INFO 1183 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-01 11:05:59.006  INFO 1183 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-01 11:05:59.037  INFO 1183 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-01 11:05:59.239  WARN 1183 --- [    Test worker] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.project.orderservice.domain.item.Item] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2022-04-01 11:05:59.830 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists album CASCADE 
+2022-04-01 11:05:59.854 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists book CASCADE 
+2022-04-01 11:05:59.860 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists item CASCADE 
+2022-04-01 11:05:59.861 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists member CASCADE 
+2022-04-01 11:05:59.863 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists movie CASCADE 
+2022-04-01 11:05:59.863 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists orders CASCADE 
+2022-04-01 11:05:59.869 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop sequence if exists hibernate_sequence
+2022-04-01 11:05:59.873 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : create sequence hibernate_sequence start with 1 increment by 1
+2022-04-01 11:05:59.876 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table album (
+       artist varchar(255),
+        item_id bigint not null,
+        primary key (item_id)
+    )
+2022-04-01 11:05:59.881 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table book (
+       author varchar(255),
+        isbn integer not null,
+        item_id bigint not null,
+        primary key (item_id)
+    )
+2022-04-01 11:05:59.883 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table item (
+       dtype varchar(31) not null,
+        item_id bigint not null,
+        name varchar(255),
+        price integer not null,
+        quantity integer not null,
+        primary key (item_id)
+    )
+2022-04-01 11:05:59.886 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table member (
+       member_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode integer not null,
+        name varchar(255),
+        primary key (member_id)
+    )
+2022-04-01 11:05:59.889 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table movie (
+       actor varchar(255),
+        director varchar(255),
+        item_id bigint not null,
+        primary key (item_id)
+    )
+2022-04-01 11:05:59.893 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table orders (
+       order_id bigint not null,
+        delivery_status varchar(255),
+        name varchar(255),
+        order_date timestamp,
+        quantity integer not null,
+        item_id bigint,
+        member_id bigint,
+        primary key (order_id)
+    )
+2022-04-01 11:05:59.894 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table album 
+       add constraint FKminb9nib0bo4t9c4kpltxtuab 
+       foreign key (item_id) 
+       references item
+2022-04-01 11:05:59.901 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table book 
+       add constraint FKgohd8evkxf3j9a0p4jk5evpiv 
+       foreign key (item_id) 
+       references item
+2022-04-01 11:05:59.904 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table movie 
+       add constraint FKq2rg7rpjfg38px01dhl4qrik6 
+       foreign key (item_id) 
+       references item
+2022-04-01 11:05:59.905 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table orders 
+       add constraint FK1f1jovhxtx7fax217fq0gi17 
+       foreign key (item_id) 
+       references item
+2022-04-01 11:05:59.912 DEBUG 1183 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member
+2022-04-01 11:05:59.923  INFO 1183 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-01 11:05:59.933  INFO 1183 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 11:06:01.057  WARN 1183 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-01 11:06:02.134  INFO 1183 --- [    Test worker] c.p.o.OrderServiceApplicationTests       : Started OrderServiceApplicationTests in 6.443 seconds (JVM running for 8.108)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
