@@ -6,17 +6,20 @@ import com.project.orderservice.repository.ItemRepository;
 import com.project.orderservice.service.ItemService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
 @RequiredArgsConstructor
+@Transactional(readOnly = true)
 public class ItemServiceImpl implements ItemService {
 
     private final ItemRepository itemRepository;
 
     @Override
+    @Transactional
     public Long saveItemBook(String name, int price, int quantity, String author, int isbn) {
         Book newBook = new Book(name, price, quantity, author, isbn);
         itemRepository.save(newBook);
