@@ -103,4 +103,26 @@ class MemberServiceImplTest {
         assertThat(memberId2).isEqualTo(member2.getId());
 
     }
+
+    @Test
+    @DisplayName("모든 멤버 조회")
+    void findAllMember() {
+
+        //given
+        Address address = new Address("city1", "street1", 1111);
+        Long memberId = memberService.saveMember(address, "member1");
+
+        Address address2 = new Address("city2", "street2", 1112);
+        Long memberId2 = memberService.saveMember(address2, "member2");
+
+
+        //when
+        List<Member> allMembers = memberService.findAllMembers();
+
+        //then
+        Member member1 = memberRepository.findById(memberId).get();
+        Member member2 = memberRepository.findById(memberId2).get();
+        assertThat(allMembers).contains(member1, member2);
+
+    }
 }

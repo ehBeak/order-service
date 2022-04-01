@@ -3,6 +3,8 @@ package com.project.orderservice.service;
 import com.project.orderservice.domain.Address;
 import com.project.orderservice.domain.Member;
 
+import java.util.List;
+
 public interface MemberService {
 
     /**
@@ -20,5 +22,11 @@ public interface MemberService {
      * @return Member: member
      */
     Member findMember(Long memberId);
+
+    /**
+     * @implSpec 모든 멤버 조회
+     * @return List<Member>
+     */
+    List<Member> findAllMembers();
 
 }

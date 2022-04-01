@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -29,5 +30,10 @@ public class MemberServiceImpl implements MemberService {
     @Override
     public Member findMember(Long memberId) {
         return memberRepository.findById(memberId).orElseThrow(() -> new NoSuchElementException(memberId + "를 가진 멤버가 존재하지 않습니다."));
+    }
+
+    @Override
+    public List<Member> findAllMembers() {
+        return memberRepository.findAll();
     }
 }
