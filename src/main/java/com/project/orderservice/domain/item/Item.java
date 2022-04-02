@@ -33,4 +33,17 @@ public abstract class Item {
         this.price = price;
         this.quantity = quantity;
     }
+
+    //==비지니스 로직==//
+    // 재고 확인
+    public boolean checkQuantity(int quantity) {
+        int surplus = this.getQuantity() - quantity;
+        if (surplus < 0) return false;
+        else return true;
+    }
+
+    // 재고 빼기
+    public void subQuantity(int quantity) {
+        this.quantity -= quantity;
+    }
 }
